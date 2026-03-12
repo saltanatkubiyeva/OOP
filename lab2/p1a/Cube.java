@@ -1,0 +1,23 @@
+package p1a;
+
+public class Cube  extends Shape3D{
+    private double side;
+
+    public Cube(double side) {
+        this.side = side;
+    }
+
+    private double getSide() {
+        return side;
+    }
+
+    @Override
+    public double volume() {
+        return side * side * side;
+    }
+
+    @Override
+    public double surfaceArea() {
+        return 6 * side;
+    }
+}
